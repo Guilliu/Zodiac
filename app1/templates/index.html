@@ -8,14 +8,24 @@
     
     <body>
         <h1>Bienvenido a <b>Zodiac</b> 🔮!</h1>
-        <p>Un nuevo marco astrológico basado en técnicas de aprendizaje no supervisado.</h1>
-        <form method='post'>    
-            Pulsa el siguiente botón para generar tu clave personal aleatoria.
-            <input type='submit' value='Compute personal key:'> <b>{% if personal_key %}{{personal_key}}{% endif %}</b>
+        <p>Un nuevo marco astrológico basado en técnicas de aprendizaje no supervisado.
+        Pulsa el siguiente botón para generar tu clave personal aleatoria.</p>
+        <form class='p-3 text-center' method='post'>    
+            <input class='btn btn-primary mt-3' type='submit' value='Compute personal key'>
         </form>
-        <p>Copia esta clave (haz copy-paste para no equivocarte 😅) en la primera casilla del formulario:
-        <a href='https://forms.gle/SpGxy9umannHSdva8' target='_blank'>Formulario</a></p>
-        <p>Una vez hayas completado el formulario aparecerá un link con tu nuevo signo del zodiaco ✨</p>
+
+        <!-- <form class='p-3 text-center' action='/', method='post' enctype='multipart/form-data'>
+            <input class='form-control' type='file' name='imagefile'>
+            <input class='btn btn-primary mt-3' type='submit' value='Pedict image'>
+        </form> -->
+        <br>
+        {% if personal_key %}    
+        <h5>Tu clave personal es: <b>{{personal_key}}</b></h5>
+        <br>
+        <p> Guárdala para identificar el cuestionario y consultar tus resultados (haz copy-paste para no equivocarte 😅)</p>
+        <p> Una vez completes este <a href='https://forms.gle/SpGxy9umannHSdva8' target='_blank'>formulario</a> aparecerá un link con tu nuevo signo del zodiaco ✨</p>
+        {% endif %}
+
 
     </body>
 </html>
