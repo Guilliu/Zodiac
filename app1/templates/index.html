@@ -8,17 +8,17 @@
     
     <body>
         <h1>Bienvenido a <b>Zodiac</b>!</h1><br>
-        <p>&nbsp Un nuevo marco astrológico basado en técnicas de aprendizaje no supervisado 🔮🧙.
-        <p>&nbsp Pulsa para generar tu clave personal aleatoria.</p>
+        <p>Un nuevo marco astrológico basado en técnicas de aprendizaje no supervisado 🔮🧙.
+        <p>Pulsa para generar tu clave personal aleatoria.</p>
         <form class='p-3 text-center' method='post'>    
             <input class='btn btn-primary mt-3' type='submit' value='Compute personal key'>
         </form>
 
         <br>
         {% if personal_key %}    
-        <h5>&nbsp Tu clave personal es: <b>{{personal_key}}</b></h5><br>
-        <p>&nbsp Guárdala para identificar el cuestionario y consultar tus resultados (haz copy-paste para no equivocarte 😅).</p>
-        <p>&nbsp Una vez hayas completado este <a href='https://forms.gle/SpGxy9umannHSdva8' target='_blank'>formulario</a> aparecerá un link con tu nuevo signo del zodiaco ✨</p>
+        <h5>Tu clave personal es: <b>{{personal_key}}</b></h5><br>
+        <p>Guárdala para identificar el cuestionario y consultar tus resultados (haz copy-paste para no equivocarte 😅).</p>
+        <p>Una vez hayas completado este <a href='https://forms.gle/SpGxy9umannHSdva8' target='_blank'>formulario</a> aparecerá un link con tu nuevo signo del zodiaco ✨</p>
         {% endif %}
     </body>
 </html>
