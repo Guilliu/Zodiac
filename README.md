@@ -1,4 +1,4 @@
-![zodiac](https://github.com/Guilliu/zodiac/blob/main/imagen.jpg)
+![zodiac](https://github.com/Guilliu/zodiac/blob/main/visual/wallpaper.jpg)
 # Zodiac:
 
 **Zodiac** presenta un nuevo marco astrológico basado en técnicas de `aprendizaje no supervisado`.
