@@ -12,7 +12,8 @@
             <input name='text'>
             <input type='submit' value='Calcular nuevo signo del zodiaco'>
         </form>
-        {% if prediction %}
+
+        {% if prediction > -1 %}
             <br>
             <h5>Tu nuevo signo del zodiaco es el <b>Grupo {{prediction}}</b>.</h5>
             <br>
