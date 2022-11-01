@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zodiac</title>
+    </head>
+    
+    <body>
+        <p>Bienvenido a <b>Zodiac</b> 🔮! Un nuevo marco astrológico basado en técnicas de aprendizaje no supervisado.</p>
+        <form method='post'>    
+            Pulsa el siguiente botón para generar tu clave personal aleatoria.
+            <input type='submit' value='Compute personal key:'> <b>{% if personal_key %}{{personal_key}}{% endif %}</b>
+        </form>
+        <p>Copia esta clave (haz copy-paste para no equivocarte 😅) en la primera casilla del formulario:
+        <a href='https://forms.gle/SpGxy9umannHSdva8' target='_blank'>Formulario</a></p>
+        <p>Una vez hayas completado el formulario aparecerá un link con tu nuevo signo del zodiaco ✨</p>
+
+    </body>
+</html>
+
