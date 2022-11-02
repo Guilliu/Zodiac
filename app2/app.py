@@ -24,7 +24,9 @@ def predict():
     X = data[data.columns[2:]]
     X.columns = [str(i) for i in X.columns]
 
-    prediction = modelo.predict(X)[0] + 1
+    prediction = modelo.predict(X)[0]
+
+    if prediction in (0, 2): prediction += 2
        
     return render_template('index.html', prediction=prediction)
 
