@@ -11,6 +11,7 @@ def prueba():
 def predict():
 
     personal_key = request.form['text']
+    
     pickle_file = open('modelo_zodiac.pckl', 'rb')
     modelo = _pickle.load(pickle_file)
     pickle_file.close()
