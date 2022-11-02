@@ -11,7 +11,7 @@ def prueba():
 def predict():
 
     personal_key = request.form['text']
-    
+
     pickle_file = open('modelo_zodiac.pckl', 'rb')
     modelo = _pickle.load(pickle_file)
     pickle_file.close()
@@ -24,7 +24,7 @@ def predict():
     X = data[data.columns[2:]]
     X.columns = [str(i) for i in X.columns]
 
-    prediction = modelo.predict(X)[0]
+    prediction = modelo.predict(X)[0] + 1
        
     return render_template('index.html', prediction=prediction)
 
