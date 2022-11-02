@@ -1,0 +1,11 @@
+Me dió un problema el grupo 0: no renderizaba el nuevo index.html porque no entraba en la condición ya que detectaba prediction como False
+(para Python todo número distinto mayor que 0 es True) y tampoco valía poner como condición prediction > 1 porque daba error en production
+(curiosamente en dev en local si funcionaba xd)... Total, que hice el siguiente remapeo de los grupos:
+
+0 -> 2
+1 -> 1
+2 -> 4
+3 -> 3
+
+Y reordene el pdf bien actualizado en el drive
+
